@@ -10,20 +10,20 @@ int main(void)
 {
 	int ones = '0';
 	int tens = '0';
-	int hundreds = '0';
+	int hunds = '0';
 
-	for (hundreds = '0'; hundreds <= '9'; hundreds++)
+	for (hunds= '0'; hunds <= '9'; hunds++)
 	{
 		for (tens = '0'; tens <= '9'; tens++)
 		{
 			for (ones = '0'; ones <= '9'; ones++)
 			{
-				if (!((ones == tens) || (hundreds == tens) || (ones < tens) || (tens < hundreds)))
+				if (!((ones == tens) || (hunds == tens) || (ones < tens) || (tens < hunds)))
 				{
-					putchar(hundreds);
+					putchar(hunds);
 					putchar(tens);
 					putchar(ones);
-					if (!(ones == '9' && tens == '8' && hundreds == '7'))
+					if (!(ones == '9' && tens == '8' && hunds == '7'))
 					{
 						putchar(',');
 						putchar(' ');
