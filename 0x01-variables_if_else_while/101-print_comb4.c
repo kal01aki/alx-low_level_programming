@@ -23,7 +23,7 @@ int main(void)
 					putchar(hundreds);
 					putchar(tens);
 					putchar(ones);
-					if (!(ones == '9' && tens == '8' & ones == '7'))
+					if (!(ones == '9' && tens == '8' & hundreds == '7'))
 					{
 						putchar(',');
 						putchar(' ');
