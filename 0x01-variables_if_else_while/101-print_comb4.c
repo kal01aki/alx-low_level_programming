@@ -9,21 +9,21 @@
 int main(void)
 {
 	int ones = '0';
-	int tens = '0';
+	int tns = '0';
 	int hunds = '0';
 
-	for (hunds= '0'; hunds <= '9'; hunds++)
+	for (hunds = '0'; hunds <= '9'; hunds++)
 	{
-		for (tens = '0'; tens <= '9'; tens++)
+		for (tns = '0'; tns <= '9'; tns++)
 		{
 			for (ones = '0'; ones <= '9'; ones++)
 			{
-				if (!((ones == tens) || (hunds == tens) || (ones < tens) || (tens < hunds)))
+				if (!((ones == tns) || (hunds == tns) || (ones < tns) || (tns < hunds)))
 				{
 					putchar(hunds);
-					putchar(tens);
+					putchar(tns);
 					putchar(ones);
-					if (!(ones == '9' && tens == '8' && hunds == '7'))
+					if (!(ones == '9' && tns == '8' && hunds == '7'))
 					{
 						putchar(',');
 						putchar(' ');
