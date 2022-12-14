@@ -9,8 +9,6 @@
 int _islower(int c)
 /* c - is an integer */
 {
-	int c = 'a';
-
 	if (c <= 'z')
 	{
 		return (1);
