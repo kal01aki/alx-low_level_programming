@@ -6,9 +6,11 @@
  * Return: 0 or 1
  */
 
-int _islower(int c)
-/* 'c' - is an integer */
+int _islower(void)
+
 {
+	int c = 'a';
+
 	for (c = 'a'; c <= 'z'; c++)
 	{
 		return (1);
