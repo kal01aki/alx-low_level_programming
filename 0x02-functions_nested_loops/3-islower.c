@@ -9,15 +9,11 @@
 int _islower(int c)
 /* 'c' - is an integer */
 {
-	int c;
-
-	if ('a' <= c <= 'z')
+	for (c = 'a'; c <= 'z'; c++)
 	{
 		return (1);
 	}
-	else
-	{
-		return (0);
+	return (0);
 	}
 	_putchar('\n');
 }
